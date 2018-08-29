@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -23,11 +23,11 @@ body {
   line-height: 147%;
 }
 
-/* h1 {}
+h1 {}
 
 h2 {}
 
-h3 {} */
+h3 {}
 
 p {
   margin: 0;
@@ -69,29 +69,89 @@ p {
   }
 }
 
-
-
-
-/* ---- components ---- */
-
-.button {
-  width: 100%;
-  background-color: blue;
-  color: #fff;
-  border: 1px solid #fff
+/* ----- game style ------ */
+.game {
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ç
+.game header {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
-.button-alt {
-  color: blue;
-  background-color: #fff;
+.game .top{
+  display: flex;
+  justify-content: space-between;
 }
 
-/* ---- section ---- */
+.game .score {
+  flex:1;
+  display: flex;
+}
 
-/* section.testimonials {
-  // ...
-} */
+.game .label {
+  font-weight: bold;
+}
 
-section.testimonials .button {
-  margin-bottom: 10px;
+.game .value {
+  font-style: italic;
+}
+
+.game .timer {
+  flex: 1;
+}
+
+.game .deck {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.game .card{
+  height: 200px;
+  line-height: 200px;
+  font-size: 50px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 15px;
+}
+
+.game .current-card {
+  flex: 1;
+}
+
+.game .action {
+  display: flex;
+  flex: 1;
+}
+.game .action button{
+
+}
+
+.game .up {
+  flex: 1;
+
+}
+
+.game .down {
+  flex: 1;
+
+}
+
+.game .next-card {
+
+}
+
+.game .spen-no {
+
+}
+
+.game .total-steps {
+
 }

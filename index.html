@@ -10,10 +10,45 @@
 
 <body>
 
+<main class="game container">
+  <header class="top">
+    <div class="score">
+      <span class="label">Score</span>
+      <span class="value">203</span>
+    </div> 
 
+    <div class="timer">
+      <span class="label">Time left: </span>
+      <span class="value">3</span>
+    </div>
+  </header>
 
-  <script src="main.js"></script>
-  <script src="game.js"></script>
+  <div class="deck">
+    <div class="card current-card">
+      5
+    </div>
+
+    <div class="action">
+      <div>
+        <button class="up"> Up</button>
+      </div>
+      <div>
+        <button class="down"> Down</button>
+      </div>
+    </div>
+  
+    <div class="card next-card">
+      ?
+    </div>
+  </div>
+  
+  <footer>
+    <p>Step: <span class="spen-no"></span> / <span class="total-steps">51</span></p>
+  </footer>
+</main>
+
+  <!-- <script src="main.js"></script>
+  <script src="game.js"></script> -->
 
 </body>
 </html>
