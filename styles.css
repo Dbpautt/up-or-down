@@ -128,10 +128,17 @@ p {
 
 .game .action {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.game .action button{
 
+.game .action button{
+  flex: 1;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: hsl(60, 100%, 50%);
+  cursor: pointer;
+  width: 100%;
 }
 
 .game .up {
@@ -145,10 +152,10 @@ p {
 }
 
 .game .next-card {
-
+  flex: 1;
 }
 
-.game .spen-no {
+.game .step-no {
 
 }
 
